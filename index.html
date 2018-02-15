@@ -1,0 +1,26 @@
+<html>
+	<head />
+	<body>
+		<canvas id='canvas' width='350' height='350'>
+		<p>Press start and eat the pizza!</p>
+    	<button id='btn'>START</button>
+    	<script type="text/javascript">
+    	var init = function () {
+			direction = 'down';
+      		drawSnake();
+      		createFood();
+      		gameloop = setInterval(paint, 80);
+  		}	
+
+  			//You need to return only the _init_ function at the end of the Module.
+  		return {
+      		init: init
+  		};
+
+  			//Close the Module.    
+		}();</script>
+	</body>   
+    <script src="js/setting.js" />
+    <script src="js/draw.js" />
+    <script src="js/app.js" />
+</html>
